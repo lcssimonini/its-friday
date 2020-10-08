@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>It is friday?</title>
+        <title>It is friday? {new Date().getDay()} </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
