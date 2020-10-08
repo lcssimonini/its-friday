@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          It is friday? {getDay()}
+          {getDay()}
         </h1>
       </main>
 
