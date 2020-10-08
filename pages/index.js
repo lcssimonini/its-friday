@@ -22,7 +22,7 @@ export default function Home() {
   )
 }
 
-export default function getDay() {
+function getDay() {
   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var d = new Date().getDay();
   return days[d];
