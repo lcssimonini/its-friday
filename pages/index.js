@@ -25,5 +25,6 @@ export default function Home() {
 function getDay() {
   var days = ["No", "Still no", "Not yet", "It is close", "I can feel it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
+  new Audio('/musica.mp3').play()
   return days[d];
 }
