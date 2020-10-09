@@ -23,16 +23,10 @@ export default function Home() {
   )
 }
 
-// function isFriday() {
-//   if(new Date().getDay() == 4) {
-//     return <audio autoplay id="my_audio" src="musica.mp3" loop="loop"></audio>
-//   }
-// }
-
 function getDayMessage() {
   var days = ["No", "Still no", "Not yet", "It is close", "I can smell it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
-  if(d == 4) {
+  if(d == 5) {
     document.getElementById("my_audio").play();
   }
   return days[d];
