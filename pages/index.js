@@ -27,5 +27,8 @@ function getDay() {
   var days = ["No", "Still no", "Not yet", "It is close", "I can feel it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
   // new Audio('/musica.mp3').play()
+  if(d == 4) {
+    document.getElementById("my_audio").play();
+  }
   return days[d];
 }
