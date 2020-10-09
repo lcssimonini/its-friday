@@ -24,10 +24,9 @@ export default function Home() {
 }
 
 function getDay() {
-  var days = ["No", "Still no", "Not yet", "It is close", "I can feel it", "Yes, it is!", "It is gone."];
+  var days = ["No", "Still no", "Not yet", "It is close", "I can smell it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
-  // new Audio('/musica.mp3').play()
-  if(document.readyState === 'complete' && d == 4) {
+  if(d == 5) {
     document.getElementById("my_audio").play();
   }
   return days[d];
