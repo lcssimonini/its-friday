@@ -35,6 +35,7 @@ export default function Home() {
 
 			<footer className={styles.footer}>
 				Powered by simo ventures
+        <br/>
         <a href="http://www.hojeesexta.com.br/" target="_blank" rel="noopener noreferrer" >
           Inspiração
         </a>
