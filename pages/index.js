@@ -26,10 +26,7 @@ export default function Home() {
 function getDay() {
   var days = ["No", "Still no", "Not yet", "It is close", "I can smell it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
-  console.log(process)
-  console.log(d)
-  console.log(document.readyState)
-  if(process.browser &&  d == 5) {
+  if(d == 5) {
     document.getElementById("my_audio").play();
   }
   return days[d];
