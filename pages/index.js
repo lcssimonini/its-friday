@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
       </main>
 
-      <audio autoplay={isFriday()} id="my_audio" src="musica.mp3" loop="loop"></audio>
+      {isFriday()}
       <footer className={styles.footer}>
           Powered by simo ventures
       </footer>
@@ -24,7 +24,9 @@ export default function Home() {
 }
 
 function isFriday() {
-  return new Date().getDay() == 4;
+  if(new Date().getDay() == 4) {
+    return <audio autoplay id="my_audio" src="musica.mp3" loop="loop"></audio>
+  }
 }
 
 function getDayMessage() {
