@@ -16,6 +16,7 @@ export default function Home() {
       </main>
 
       <audio id="my_audio" src="musica.mp3" loop="loop"></audio>
+      
       <footer className={styles.footer}>
           Powered by simo ventures
       </footer>
