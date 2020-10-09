@@ -24,7 +24,7 @@ export default function Home() {
 }
 
 function isFriday() {
-  return new Date().getDay() == 5;
+  return new Date().getDay() == 4;
 }
 
 function getDayMessage() {
