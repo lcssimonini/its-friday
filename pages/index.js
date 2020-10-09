@@ -11,11 +11,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          {getDay()}
+          {getDayMessage()}
         </h1>
       </main>
 
-      <audio id="my_audio" src="musica.mp3" loop="loop"></audio>
+      <audio autoplay={isFriday()} id="my_audio" src="musica.mp3" loop="loop"></audio>
       <footer className={styles.footer}>
           Powered by simo ventures
       </footer>
@@ -23,11 +23,12 @@ export default function Home() {
   )
 }
 
-function getDay() {
+function isFriday() {
+  return new Date().getDay() == 5;
+}
+
+function getDayMessage() {
   var days = ["No", "Still no", "Not yet", "It is close", "I can smell it", "Yes, it is!", "It is gone."];
   var d = new Date().getDay();
-  if(d == 5) {
-    document.getElementById("my_audio").play();
-  }
   return days[d];
 }
