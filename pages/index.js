@@ -1,4 +1,4 @@
-import { useRef, useEffect, createRef } from 'react'
+import {useRef, useEffect, createRef} from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
