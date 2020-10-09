@@ -21,7 +21,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>It is friday? </title>
+				<title>Is it friday? </title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -35,6 +35,9 @@ export default function Home() {
 
 			<footer className={styles.footer}>
 				Powered by simo ventures
+        <a href="http://www.hojeesexta.com.br/" target="_blank" rel="noopener noreferrer" >
+          Inspiração
+        </a>
 			</footer>
 		</div>
 	)
